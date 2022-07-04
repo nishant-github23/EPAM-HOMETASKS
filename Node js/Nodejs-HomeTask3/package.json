@@ -1,0 +1,41 @@
+{
+  "name": "task3",
+  "type": "commonjs",
+  "version": "1.0.0",
+  "description": "Node.js Rest Apis with Express, Sequelize ",
+  "main": "./src/app.js",
+  "scripts": {
+    "dev": "nodemon ./src/app.js",
+    "start": "npm run build && node ./src/app.js",
+    "build": "npx babel src -d dist"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "sequelize",
+    "rest",
+    "api",
+    "postgresql"
+  ],
+  "author": "Mounika",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.1",
+    "joi": "^17.6.0",
+    "nodemon": "^2.0.16",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^5.21.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/node": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.15.0"
+  }
+}

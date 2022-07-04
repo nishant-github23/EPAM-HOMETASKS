@@ -1,0 +1,134 @@
+  body {
+    padding: 20px;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .disp-flex {
+    display: flex;
+  }
+  
+  .f-row {
+    flex-direction: row;
+  }
+  
+  .center {
+    justify-content: center;
+    align-items: center;
+  }
+  #search-container > img {
+    height: 60px;
+ 
+  }
+  
+  form {
+   margin-left: 150px;
+  }
+  
+  input {
+    margin-top: 20px;
+    height: 34px;
+    width: 700px;
+    outline-style: groove;
+  }
+  
+  #search-video {
+    height: 34px;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 0 20px;
+    background-color: black;
+    color: white;
+    width: 150px;
+    border-radius: 20px;
+  }
+
+  #search-video:hover{
+      width: 200px;
+      cursor: pointer;
+  }
+
+  #content-container {
+    height: 80vh;
+    margin-top:10px;
+    background-color: white;
+    border-top: 2px solid #000;
+    flex-wrap: wrap;
+    margin-bottom:5px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .video-box {
+    width: 280px;
+    padding: 10px;
+    border: 2px solid  #000;
+    box-sizing: border-box;
+    margin: 10px 12px;
+    height: 262px;
+    color: black;
+  }
+
+   .video-box > img {
+    width: 260px;
+    height: 140px;
+   }
+  
+  .video-title {
+    font-weight: bold;
+    margin-top: 4px;
+  }
+  .video-content {
+    color: #909090;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 46px;
+    font-size: 0.8rem;
+    text-align: left;
+    margin-top: 5px
+  }
+  #pagination{
+   height: 5vh;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   bottom: 0px;
+   left:0px;
+   right:0px;
+   position: fixed;
+  }
+  
+#btnPrev, #btnNext{
+  padding:13px 20px;
+  height: 20px;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.btnDisable{
+  visibility:hidden;
+}
+
+@media screen and (max-width: 768px) {
+  #search-container {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2px;
+  }
+
+  form {
+    flex: 1;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  #logo{
+      width: 50px;
+      height: 40px;
+  }
+}
+

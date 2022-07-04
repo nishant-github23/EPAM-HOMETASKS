@@ -1,0 +1,8 @@
+app-comp1{
+    display: flex;
+    flex-direction: column;
+}
+
+app-comp2{
+    margin: 100px;
+}

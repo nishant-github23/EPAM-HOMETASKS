@@ -1,0 +1,275 @@
+*{
+--blue :#273852;
+--white : #ffffff;
+--orange :#d45d47; 
+--black:#000000;
+--light-gray: #aaaaaa;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+form{
+  display: flex;
+  flex-direction: row;
+}
+
+.toolbox-sub-label{
+  font-weight: bold;
+  position: absolute;
+}
+
+#subscription,#subscribe-button{
+  margin-top: 20px;
+
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.header-content { 
+  /* CLASS */
+  background-color: var(--white);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 20px;
+  padding: 12px;
+  border: 2px solid var(--orange);
+}
+
+.page-title {
+  font-size: 2rem;
+  margin: 0px 20px 2px 20px;
+}
+
+.brand-word {
+  font-size: small;
+}
+
+.bold-it{
+  font-weight: bolder; 
+}
+
+.posted-on{
+  font-size: small;
+}
+
+main {
+  flex: 1 0 auto;
+  margin: 24px 28px;
+}
+
+#toolbox {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1.5px solid var(--black);
+  display: flex;
+  flex-direction: row;
+}
+
+.toolboxlabel {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-size: small;
+  font-weight: bolder;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+}
+
+#categoryFilter,
+#subscription {
+  text-transform: capitalize;
+  padding: 4px 12px;
+  width: 14rem;
+  border: 1px solid var(--black);
+}
+
+#categoryFilter {
+  height: 34px;
+}
+
+#main-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-left: 5rem;
+}
+
+#subscribe-button {
+  height: 2.12rem;
+  background-color: var(--black);
+  color: var(--white);
+  border: var(--black);
+  cursor: pointer;
+}
+
+#News {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+
+#articles-container {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+aside {
+  flex: 0.2;
+  justify-content: flex-end;
+}
+
+.article-bottom {
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--light-gray);
+  display: flex;
+  flex-direction: row;
+}
+
+.img {
+  width: 190px;
+  height: 180px;
+  background-color: var(--light-gray);
+  margin-right: 24px;
+  margin-top: 17px;
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  font-size: large;
+  font-weight: bolder;
+  margin-bottom: 2px;
+}
+
+.description {
+  font-size: 0.9rem;
+}
+
+.main-content>small {
+  font-size: 0.7rem;
+  text-align: justify;
+}
+
+.main-content>button {
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+  height: 2.5rem;
+  padding: 1px 16px;
+  color: var(--white);
+}
+
+footer {
+  flex-shrink: 0;
+  background-color: var(--blue);
+  height: 46px;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.readmore:hover {
+  width: 200px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 678px) {
+  .content {
+    width: 100%;
+  }
+
+  #News {
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 24px;
+    border-bottom: 1.5px solid var(--black);
+  }
+
+  #categoryFilter {
+    width: 300px;
+  }
+
+  #subscription {
+    width: 200px;
+  }
+
+  .toolboxlabel {
+    margin-top: 8px;
+  }
+
+  #subscribe {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  #main-title {
+    margin-top: 20px;
+  }
+
+  #toolbox {
+    height: 200px;
+    width: 100%;
+    display: list-item;
+    list-style: none;
+
+  }
+
+  #News {
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .img {
+    margin-top: 100px;
+  }
+
+  .description {
+    overflow: hidden;
+    font-size: smaller;
+    text-overflow: ellipsis;
+  }
+
+  .main-content>button {
+    height: 2rem;
+  }
+}
+
+
+
+/* COLOR-PELLATE */
