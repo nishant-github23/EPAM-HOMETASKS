@@ -1,0 +1,63 @@
+.app {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin-top: 10px;
+    position: relative;
+    background-color: whitesmoke;
+    background-size: cover;
+  }
+.app::-webkit-scrollbar{
+  display: none;
+}
+.title{
+    position: absolute;
+    color:#000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:60px;
+    top:0px
+}
+.banner {
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+  }
+  
+.menuArea{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:95%;
+  margin: auto;
+}
+
+.linksContainer{
+   float: right; 
+}
+.linksContainer li {
+    display: inline-block;
+    list-style: none;
+}
+.linksContainer li a {
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-size: large;
+    color:black;
+    padding:5px 10px;
+}
+.linksContainer li a:hover{
+   background:grey;
+   color:black;
+   border-radius: 5px;
+}
+
