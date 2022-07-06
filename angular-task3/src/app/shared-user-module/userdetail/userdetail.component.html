@@ -1,0 +1,18 @@
+<div class="col-10 my-3 detailblock"> 
+    <div class="card"> 
+    <h1 >{{ user?.firstName | userFullname : user?.lastName}}</h1>
+    
+      <div *ngIf="user?.isDeleted" id="div1">  
+        <p  class="Deleted">Deleted</p>
+      </div>  
+
+      <div *ngIf="!user?.isDeleted" id="div2">
+         <p  class="Active">Active</p>
+      </div>
+
+    <p >Login Id - {{user?.id}}</p>
+    <p >First Name - {{user?.firstName}} </p>
+    <p >Last Name - {{user?.lastName}}</p>
+    <p >Age - {{user?.age}}</p>
+    </div>
+</div>

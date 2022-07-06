@@ -1,0 +1,8 @@
+a.nav-link.active{
+    /* active state styles */
+    color: blue !important;
+    font-weight: bold;
+}
+a.nav-link.link {
+    color: pink;
+  }
